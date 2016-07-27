@@ -1,0 +1,13 @@
+{
+  "name": "zhihu-daily-vue-server",
+  "version": "1.0.0",
+  "description": "zhihu daily by vue.js server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "garychang",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
