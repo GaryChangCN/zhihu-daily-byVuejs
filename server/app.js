@@ -181,7 +181,7 @@ server.on('request', function(req, res) {
             var opt={
                 hostname:imgUrl.hostname,
                 port:'80',
-                pathn:imgUrl.path,
+                path:imgUrl.path,
                 headers:imgUrl.headers
             }
             var request = http.request(opt);
@@ -194,6 +194,7 @@ server.on('request', function(req, res) {
                 response.on('end', function() {
                     res.writeHead(200, response.headers);
                     res.write(c, "binary");
+                    //require("fs").writeFile('./tmp/'+)
                     res.end();
                 })
             });
