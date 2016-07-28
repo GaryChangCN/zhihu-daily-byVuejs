@@ -124,6 +124,7 @@ ul {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-left: 0px;
     li {
         list-style-type: none;
         display: flex;

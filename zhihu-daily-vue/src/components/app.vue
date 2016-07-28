@@ -20,7 +20,6 @@
         <span>手机打开效果更佳</span>
         <br>
         <span>带宽低打开稍慢</span>
-        <iframe v:bind:src="'https://ghbtns.com/github-btn.html?user=garychangcn&repo=zhihu-daily-byVuejs&type=star&count=true&size=small'" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
     </div>
 </template>
 <script>

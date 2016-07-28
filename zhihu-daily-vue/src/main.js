@@ -7,7 +7,7 @@ import article from './components/article.vue';
 import index from "./components/index.vue";
 Vue.use(Router);
 Vue.use(vueResource);
-window.Tin="http://zhihu.garychang.cn";
+window.Tin="";
 var router = new Router();
 router.map({
 	'/contents':{
