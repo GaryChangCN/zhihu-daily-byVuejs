@@ -1,0 +1,93 @@
+<template>
+	<div class="slide">
+		<div class="panel">
+			<div class="title"></div>
+			<ul>
+				<li v-for="item in slideList">
+					<span>{{item.name}}</span>
+				</li>
+			</ul>
+		</div>
+		<div class="panel-cover" @click.stop="handleHide"></div>
+	</div>
+</template>
+
+<script>
+
+export default {
+	name:"slide",
+	data(){
+		return {
+		}
+	},
+	computed:{
+		slideList(){
+			return this.$store.state.slide.list;
+		}
+	},
+	mounted(){
+		this.$store.dispatch('updateList');
+	},
+	methods:{
+		handleHide(){
+			this.onClick();
+		}
+	},
+	props:['onClick']
+}
+</script>
+
+<style lang="less" scope>
+@import '../style/main.less';
+.slide{
+	position: absolute;
+	height: inherit;
+	left: 0;
+	width: 100%;
+	transform: translateX(-100%);
+	transition: transform 0.3s;
+	background: @cover;
+	.panel-cover{
+		width: 30%;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		background-color: transparent;
+	}
+	.panel{
+		width: 70%;
+		height: 100%;
+		position: absolute;
+		background-color: #fff;
+		left: 0;
+		flex-direction: column;
+		justify-content: flex-start;
+		.title{
+			background-color: @blue;
+			height: 120px;
+			width: 100%;
+		}
+		ul{
+			width: 100%;
+			flex-direction: column;
+			li{
+				width: 100%;
+				height: 40px;
+				span{
+					width: 90%;
+					height: 40px;
+					justify-content: flex-start;
+					cursor: default;
+					border-bottom: 1px dashed @grey;
+				}
+				&:hover{
+					background-color: @grey;
+				}
+			}
+		}
+	}
+}
+.slide-show{
+	transform: translateX(0);
+}
+</style>
