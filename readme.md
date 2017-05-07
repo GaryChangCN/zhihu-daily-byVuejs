@@ -29,24 +29,22 @@ api来源于 [izzyleung](https://github.com/izzyleung/ZhihuDailyPurify) 并使�
 所有uri格式相同除了把host改成了本地 `localhost:9999`
 
 ### tips
-图片会提示图片只允许在知乎使用 我目前没有好的解决方式，若直接使用api返回的图片地址，知乎会直接返回`403`，我这里使用了node来代理更改referer头获取图片，但是使用一会儿后就不行了，准备采用iframe嵌套访问图片当然，有好的解决盗链的方法可以教教我。（已经解决）
+图片会提示图片只允许在知乎使用 我目前没有好的解决方式，若直接使用api返回的图片地址，知乎会直接返回`403`，我这里使用了node来代理更改referer头获取图片。使用方式是新建一个全局`filter` `image`。
+
+## vue1.0
+
+[分支1.0](https://github.com/GaryChangCN/zhihu-daily-byVuejs/tree/v1.0)
 
 ## Demo
 
-[Demo地址](http://zhihu.garychang.cn) 建议使用手机查看或者F12 DevTool 手机模式 **仅供测试**
-
+[Demo地址](http://zhihu.garychang.cn) 建议使用手机查看或者F12 DevTool 手机模式
 
 ## 截图
 
-
+截图是使用vue1.0构建的
 ![图片一](http://7xw4hd.com1.z0.glb.clouddn.com/620552845619830166.jpg)
 
----
-
-
 ![图片二](http://7xw4hd.com1.z0.glb.clouddn.com/635505886232277358.jpg)
-
----
 
 ![图片三](http://7xw4hd.com1.z0.glb.clouddn.com/92529011503075773.jpg)
 
