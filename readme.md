@@ -13,7 +13,7 @@ babel:`preset-es2015`,`stage-3`,由于使用了 `async/await`，所以需要`bab
 
 ## 预览
 使用vue1.0开发的版本已经停止维护和预览。
-2.0版本demo预览。
+<a href="http://garychang.cn/show/zh-vue2.html" target="_Blank">2.0版本demo预览</a>
 
 ## 使用
 ```
@@ -37,13 +37,17 @@ api来源于 [@izzyleung](https://github.com/izzyleung/ZhihuDailyPurify) 并使�
 [分支1.0](https://github.com/GaryChangCN/zhihu-daily-byVuejs/tree/v1.0)
 
 ## 截图 
-截图分为使用1.0开发的版本和2.0开发的版本
-###1.0版本
-![图片一](http://7xw4hd.com1.z0.glb.clouddn.com/620552845619830166.jpg)
+截图分为使用[1.0](#1.0版本)开发的版本和[2.0](2.0版本)开发的版本
 
-![图片二](http://7xw4hd.com1.z0.glb.clouddn.com/635505886232277358.jpg)
+### 2.0版本
+![图片一](http://7xw4hd.com1.z0.glb.clouddn.com/zhihuvue2-1.png-scale50)
+![图片二](http://7xw4hd.com1.z0.glb.clouddn.com/zhihuvue2-2.png-scale50)
+![图片三](http://7xw4hd.com1.z0.glb.clouddn.com/zhihuvue2-3.png-scale50)
 
-![图片三](http://7xw4hd.com1.z0.glb.clouddn.com/92529011503075773.jpg)
+### 1.0版本
+![图片一](http://7xw4hd.com1.z0.glb.clouddn.com/620552845619830166.jpg-scale50)
+![图片二](http://7xw4hd.com1.z0.glb.clouddn.com/635505886232277358.jpg-scale50)
+![图片三](http://7xw4hd.com1.z0.glb.clouddn.com/92529011503075773.jpg-scale50)
 
 ## License
 
