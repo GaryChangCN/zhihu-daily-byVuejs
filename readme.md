@@ -22,6 +22,8 @@ yarn install
 yran run server
 yarn run dev
 ```
+在server.js中更改后端host地址。
+
 ## API
 api来源于 [@izzyleung](https://github.com/izzyleung/ZhihuDailyPurify) 并使用node.js进行二次封装， 项目灵感来源于 [@hilongjw](https://github.com/hilongjw/vue-zhihu-daily?utm_source=tuicool&utm_medium=referral) 
 
