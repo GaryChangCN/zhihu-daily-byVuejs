@@ -1,21 +1,24 @@
 <template>
-	<div class="index">
-		<Wheel></Wheel>
+	<div class="themeList">
 		<ArticleList :id="id"></ArticleList>
 	</div>
 </template>
 <script>
-	import Wheel from '../components/Wheel.vue';
 	import ArticleList from '../components/AtricleList.vue';
 	export default {
-		name:"index",
+		name:"themeList",
 		data(){
 			return {
-				id:null
+
+			}
+		},
+		computed:{
+			id(){
+				return this.$route.query.id;
 			}
 		},
 		components:{
-			Wheel,ArticleList
+			ArticleList
 		}
 	}
 </script>

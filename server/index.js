@@ -30,7 +30,7 @@ server.on('request', function(req, res) {
 			res.end({ "err": err });
 		});
 		request.end();
-	}else if(/^\/v2/.test(pathName)){
+	}else if(/\.(jpg|png)$/.test(pathName)){
 		const remoteImage="pic1.zhimg.com";
 		let headers = {
 			"Referer": "https://daily.zhihu.com/"

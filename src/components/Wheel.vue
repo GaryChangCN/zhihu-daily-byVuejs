@@ -44,7 +44,7 @@
 					}else{
 						this.move(end);
 					}
-				}, 1000);
+				}, 2000);
 			}	
 		},
 		mounted(){
@@ -80,7 +80,7 @@
 				position: relative;
 				float: left;
 				height:200px;
-				background-color:red;
+				background-color:transparent;
 				overflow: hidden;
 				.title{
 					width: inherit;

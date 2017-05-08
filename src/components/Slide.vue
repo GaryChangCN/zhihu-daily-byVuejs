@@ -3,7 +3,8 @@
 		<div class="panel">
 			<div class="title"></div>
 			<ul>
-				<li v-for="item in slideList">
+				<li @click="handleToIndex('热门消息')"><span>首页</span></li>
+				<li v-for="item in slideList" @click="handleClick(item.id,item.name)">
 					<span>{{item.name}}</span>
 				</li>
 			</ul>
@@ -29,7 +30,22 @@ export default {
 		this.$store.dispatch('updateList');
 	},
 	methods:{
+		handleToIndex(title){
+			this.$router.push('/');
+			this.$store.commit("UPDATETITLE",{title});			
+			this.onClick();			
+		},
 		handleHide(){
+			this.onClick();
+		},
+		handleClick(id,title){
+			this.$router.push({
+				path:'themeList',
+				query:{
+					id
+				}
+			});
+			this.$store.commit("UPDATETITLE",{title});
 			this.onClick();
 		}
 	},

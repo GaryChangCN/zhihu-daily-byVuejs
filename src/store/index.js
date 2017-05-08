@@ -5,6 +5,7 @@ import slide from './modules/slide';
 import header from './modules/header';
 import wheel from './modules/wheel';
 import articleList from './modules/articleList'
+import articleDetail from './modules/articleDetail';
 
 Vue.use(Vuex);
 
@@ -13,7 +14,8 @@ const store = new Vuex.Store({
 		slide,
 		header,
 		wheel,
-		articleList
+		articleList,
+		articleDetail
 	}
 })
 
