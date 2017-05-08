@@ -33,7 +33,7 @@ module.exports = {
     devServer: {
 		contentBase: path.join(__dirname, "dist"),
         compress: true,
-        open: false,
+        open: true,
         port: 9900,
         historyApiFallback: true,
         overlay: {
