@@ -1,7 +1,12 @@
 <template>
 	<div class="slide">
 		<div class="panel">
-			<div class="title"></div>
+			<div class="title">
+				<img src="https://cn.vuejs.org/images/logo.png" alt="">
+				<div class="div">
+					<iframe src="https://ghbtns.com/github-btn.html?user=garychangcn&repo=zhihu-daily-byVuejs&type=watch&count=true&size=small&count=false" 	frameborder="0" scrolling="0" width="55px" height="20px"></iframe>
+				</div>
+			</div>
 			<ul>
 				<li @click="handleToIndex('热门消息')"><span>首页</span></li>
 				<li v-for="item in slideList" @click="handleClick(item.id,item.name)">
@@ -82,6 +87,15 @@ export default {
 			background-color: @blue;
 			height: 120px;
 			width: 100%;
+			justify-content: flex-start;
+			img{
+				width: 70px;
+				margin:0 20px;
+			}
+			div{
+				height: 70px;
+				align-items: flex-end;
+			}
 		}
 		ul{
 			width: 100%;
