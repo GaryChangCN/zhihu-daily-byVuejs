@@ -1,4 +1,4 @@
-export const remote="http://localhost:9999"
+export const remote=process.env.NODE_ENV=="production"?"http://zhapi.garychang.cn":"http://localhost:9999";
 const url=require("url");
 
 async function fetchMore(path){

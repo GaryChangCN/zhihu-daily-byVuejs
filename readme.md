@@ -19,7 +19,7 @@ babel:`preset-es2015`,`stage-3`,由于使用了 `async/await`，所以需要`bab
 ```
 git clone git@github.com:GaryChangCN/zhihu-daily-byVuejs.git
 yarn install
-yran run server
+yarn run server
 yarn run dev
 ```
 在server.js中更改后端host地址。
