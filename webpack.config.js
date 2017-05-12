@@ -39,8 +39,7 @@ module.exports = {
         overlay: {
             warnings: true,
             errors: true
-        },
-		host:"0.0.0.0"
+        }
     },
     performance: {
         hints: false

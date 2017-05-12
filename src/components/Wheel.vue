@@ -68,7 +68,7 @@
 	@import '../style/set.less';
 	.wheel{
 		width: 100%;
-		overflow-x: auto;
+		overflow-x: hidden;
 		position: relative;
 		display: block;
 		.wheel-container{
@@ -87,6 +87,7 @@
 					position: absolute;
 					height: 60px;
 					bottom: 0;
+					left: 0;
 					background-color: @cover;
 					color: #fff;
 					padding: 0 10px;
