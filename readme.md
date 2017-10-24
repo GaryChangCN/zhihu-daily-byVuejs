@@ -13,7 +13,7 @@ babel:`preset-es2015`,`stage-3`,由于使用了 `async/await`，所以需要`bab
 
 ## 预览
 使用vue1.0开发的版本已经停止维护和预览。
-<a href="http://garychang.cn/show/zh-vue2.html" target="_Blank">2.0版本demo预览</a>
+<a href="http://garychang.cn/show/zh-vue2.html" target="_Blank">2.0版本demo预览</a> <--- api域名没重新备案，暂时访问不了
 
 ## 使用
 ```
